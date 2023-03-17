@@ -35,13 +35,24 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}
-        <a 
-          href="https://beian.miit.gov.cn/" 
-          target="_blank">宁ICP备20000276号
-        >
-        </a>
-      </div>
+      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
+
+      
+      {config.Beian && (
+          <a
+            className={styles.Beian}
+            href={`https://beian.miit.gov.cn/`}
+            title={`宁ICP备20000276号`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaBeian />
+          </a>
+        )}
+      
+      
+      
+      
       
       
       
