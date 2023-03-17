@@ -36,7 +36,7 @@ export const FooterImpl: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>Copyright 2022 {config.author}</div>
-
+        <a href="https://beian.miit.gov.cn/" target="_blank">宁ICP备20000276号</a>
       <div className={styles.settings}>
         {hasMounted && (
           <a
@@ -134,7 +134,7 @@ export const FooterImpl: React.FC = () => {
             <FaYoutube />
           </a>
         )}
-        <a href="https://beian.miit.gov.cn/" target="_blank">您的备案号</a>
+        
       </div>
     </footer>
   )
